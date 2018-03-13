@@ -17,16 +17,16 @@ var Todo = mongoose.model("Todo", {
     }
 });
 
-var newTodo = new Todo({
-    text: "Fill up water",
-    completed: false,
-    completedAt: 1
-});
-
-newTodo.save().then(function(doc) {
-    console.log(`Saved to-do: ${doc}`);
-}, function(err) {
-    console.log(`Unable to save todo`);
-});
+//var newTodo = new Todo({
+//    text: "Fill up water",
+//    completed: false,
+//    completedAt: 1
+//});
+//
+//newTodo.save().then(function(doc) {
+//    console.log(`Saved to-do: ${doc}`);
+//}, function(err) {
+//    console.log(`Unable to save todo`);
+//});
 
 module.exports = {Todo};
